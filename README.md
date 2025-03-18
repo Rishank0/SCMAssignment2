@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Forms Clone</title>
+    <title>Student Registration Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,23 +56,29 @@
 </head>
 <body>
     <div class="form-container">
-        <h2>Google Form Clone</h2>
+        <h2>Student Registration Form</h2>
         <form action="#" method="post">
-            <label for="name">Name</label>
+            <label for="name">Full Name</label>
             <input type="text" id="name" name="name" required>
             
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
             
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
             
-            <label for="options">Select an option</label>
-            <select id="options" name="options">
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
             </select>
+            
+            <label for="course">Course Enrolled</label>
+            <input type="text" id="course" name="course" required>
+            
+            <label for="message">Additional Notes</label>
+            <textarea id="message" name="message" rows="4"></textarea>
             
             <button type="submit">Submit</button>
         </form>
